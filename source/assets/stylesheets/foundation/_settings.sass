@@ -21,7 +21,7 @@
 
 $b-borderColor: #ccc
 $b-borderStyle: solid
-$b-borderWidth: 2px
+$b-borderWidth: 1px
 $b-border: $b-borderWidth $b-borderStyle $b-borderColor
 $b-borderRadius: 3px
 $b-boxShadow: 0 2px 0 rgba(#222, 0.15)
@@ -47,6 +47,11 @@ $c-warning: #f39c12
 $f-base: 'Open Sans', Helvetica, Arial, sans-serif
 $f-header: 'Open Sans', Helvetica, Arial, sans-serif
 
+// ----- Card ----- //
+
+$card-background: $c-invert
+$card-borderWidth: 2px
+
 // ----- Grid ----- //
 
 $grid-breakpoint-lap: 480px
@@ -55,3 +60,12 @@ $grid-columns: 5
 $grid-defaults: "lap" $grid-breakpoint-lap, "desk" $grid-breakpoint-desk
 $grid-gutter: 30px
 $grid-silent: false
+
+// ----- Progress ----- //
+
+$progress-background: $c-invert
+$progress-bar-background: $c-highlight
+
+// ----- Row ----- //
+
+$row--a-background: $c-secondary

@@ -12,9 +12,9 @@
 // *************************************
 
 .card
-  @extend .bci
   @extend .por
   @extend .ram
+  background: $card-background
   box-shadow: $b-boxShadow
   padding: $b-whitespace
 
@@ -26,13 +26,13 @@
 
 .card--error
   box-shadow: none
-  border: $b-borderWidth $b-borderStyle $c-error
+  border: $card-borderWidth $b-borderStyle $c-error
 
 .card--success
   box-shadow: none
-  border: $b-borderWidth $b-borderStyle $c-success
+  border: $card-borderWidth $b-borderStyle $c-success
 
 .card--warning
   box-shadow: none
-  border: $b-borderWidth $b-borderStyle $c-warning
+  border: $card-borderWidth $b-borderStyle $c-warning
 
