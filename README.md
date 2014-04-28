@@ -65,6 +65,14 @@ warning_status: 'Warning' # The warning status title (e.g. 'In Progress')
 error_status: 'Error' # The error status title (e.g. 'Not Started')
 ```
 
+### Optional Status Types
+
+If you don't want to exclude any of the three status types, you can just pass `false` to that element:
+
+```yaml
+error_status: false
+```
+
 Adding Pages
 ------------
 

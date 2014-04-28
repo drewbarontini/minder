@@ -14,18 +14,21 @@
             %h3.statList-item-title
               %span.tci= get_total_pages()
               %b Total
-          %li.statList-item.list-item
-            %h3.statList-item-title.statList-item-title--success
-              %span= get_page_count('success')
-              %b= data.status.success_status
-          %li.statList-item.list-item
-            %h3.statList-item-title.statList-item-title--warning
-              %span= get_page_count('warning')
-              %b= data.status.warning_status
-          %li.statList-item.list-item
-            %h3.statList-item-title.statList-item-title--error
-              %span= get_page_count('error')
-              %b= data.status.error_status
+          - if data.status.success_status
+            %li.statList-item.list-item
+              %h3.statList-item-title.statList-item-title--success
+                %span= get_page_count('success')
+                %b= data.status.success_status
+          - if data.status.warning_status
+            %li.statList-item.list-item
+              %h3.statList-item-title.statList-item-title--warning
+                %span= get_page_count('warning')
+                %b= data.status.warning_status
+          - if data.status.error_status
+            %li.statList-item.list-item
+              %h3.statList-item-title.statList-item-title--error
+                %span= get_page_count('error')
+                %b= data.status.error_status
 
 .progress
   .progress-bar{ style: "width: #{ get_build_progress() }%"}
