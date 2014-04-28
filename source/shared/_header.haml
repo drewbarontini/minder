@@ -9,24 +9,24 @@
 
       .grid-box.grid-box--desk--3of5
 
-        %ul.list.list--object.fr.mts
-          %li.list-item
+        %ul.statList.list
+          %li.statList-item.list-item
             .mrm
-              %h3.h1.tac.tcs
+              %h3.statList-item-title
                 = get_total_pages()
                 %b Total
-          %li.list-item
+          %li.statList-item.list-item
             .mrm
-              %h3.h1.tac.tcu
+              %h3.statList-item-title.statList-item-title--success
                 = get_page_count('success')
                 %b= data.status.success_status
-          %li.list-item
+          %li.statList-item.list-item
             .mrm
-              %h3.h1.tac.tcw
+              %h3.statList-item-title.statList-item-title--warning
                 = get_page_count('warning')
                 %b= data.status.warning_status
-          %li.list-item
-            %h3.h1.tac.tce
+          %li.statList-item.list-item
+            %h3.statList-item-title.statList-item-title--error
               = get_page_count('error')
               %b= data.status.error_status
 

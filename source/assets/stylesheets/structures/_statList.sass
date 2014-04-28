@@ -1,0 +1,53 @@
+// *************************************
+//
+//   Stat List
+//   -> A list of stats
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %ul.statList.list
+//   %li.statList-item.list-item
+//     %h3.statList-item-title[.statList-item-title--error|success|warning]
+//       12
+//       %b Title
+//
+// *************************************
+
+.statList
+  @extend .list--object
+  @extend .mts
+  @extend .tss
+  +respond-to($grid-breakpoint-desk)
+    float: right
+    font-size: 100%
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+// Title
+
+.statList-item-title
+  @extend .h1
+  @extend .tac
+  @extend .tcs
+
+// Error
+
+.statList-item-title.statList-item-title--error
+  @extend .tce
+
+// Success
+
+.statList-item-title.statList-item-title--success
+  @extend .tcu
+
+// Warning
+
+.statList-item-title.statList-item-title--warning
+  @extend .tcw
+
