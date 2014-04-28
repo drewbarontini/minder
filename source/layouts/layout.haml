@@ -6,7 +6,10 @@
     %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0' }
 
     / Use title if it's in the page YAML frontmatter
-    %title= data.status.title
+    - if yield_content(:title)
+      %title= "#{ yield_content(:title) } - #{data.status.title}"
+    - else
+      %title= data.status.title
 
     = stylesheet_link_tag 'application'
 
