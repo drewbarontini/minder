@@ -1,0 +1,13 @@
+%div{ class: "card card--#{status} mbm" }
+  %h2= link_to page, link, target: '_blank'
+  %p{ class: ('mbf' unless note) }
+    %i.icn.icn--warning--alt.mrxs.tcs.vab
+    %strong Status:
+    - if status == 'success'
+      %span.tsi= data.status.success_status
+    - elsif status == 'warning'
+      %span.tsi= data.status.warning_status
+    - else
+      %span.tsi= data.status.error_status
+  - if note
+    %p.mbf= note

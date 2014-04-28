@@ -1,0 +1,3 @@
+- data.pages.select{ |page| page.type == page_name }.each do |p|
+  = partial "#{data.status.path}shared/page", locals: { status: p.status, page: p.title, link: p.link, note: p.note }
+

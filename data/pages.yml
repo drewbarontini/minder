@@ -1,0 +1,16 @@
+- title: 'Page One'
+  link: '#'
+  status: 'success'
+  type: 'section-one'
+
+- title: 'Page Two'
+  link: '#'
+  status: 'warning'
+  note: 'This is a note for this page.'
+  type: 'section-two'
+
+- title: 'Page Three'
+  link: '#'
+  status: 'error'
+  type: 'section-two'
+

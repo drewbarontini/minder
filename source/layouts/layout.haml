@@ -10,6 +10,17 @@
 
   %body{ class: page_classes }
 
-    = yield
+    = partial "#{data.status.path}shared/header"
 
-    = javascript_include_tag  'application'
+    .row
+      .cell.cell--m.well--l
+        %main.content
+          .grid
+            .grid-box.grid-box--1of4
+
+              = partial "#{data.status.path}shared/nav"
+
+            .grid-box.grid-box--3of4
+
+              %main.content= yield
+

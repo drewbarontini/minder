@@ -1,0 +1,7 @@
+title: 'Status'
+description: 'A status site for the front-end.'
+path: ''
+index_section: 'section-one'
+success_status: 'Success'
+warning_status: 'Warning'
+error_status: 'Error'

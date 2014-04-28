@@ -1,0 +1,33 @@
+%header.row
+  .cell
+    .grid
+      .grid-box.grid-box--2of5
+
+        %h1.mbf.tci= data.status.title
+        %p.tcs= data.status.description
+
+      .grid-box.grid-box--3of5
+
+        %ul.list.list--object.fr
+          %li.list-item
+            .mrm
+              %h3.h1.tac
+                = get_total_pages()
+                %b Total
+          %li.list-item
+            .mrm
+              %h3.h1.tac.tcu
+                = get_page_count('success')
+                %b= data.status.success_status
+          %li.list-item
+            .mrm
+              %h3.h1.tac.tcw
+                = get_page_count('warning')
+                %b= data.status.warning_status
+          %li.list-item
+            %h3.h1.tac.tce
+              = get_page_count('error')
+              %b= data.status.error_status
+
+.progress
+  .progress-bar{ style: "width: #{ get_build_progress() }%"}
