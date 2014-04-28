@@ -1,7 +1,10 @@
 Status
 ======
 
-A Middleman-powered front-end status application.
+A Middleman-powered front-end status application. Use cases:
+
+- When building out a front-end for a site, adding pages for the designer to review once the front-end is implemented.
+- Using the list to mark the status of live pages on a front-end and mark the bug-free, completed pages.
 
 Installing Middleman
 --------------------
@@ -56,9 +59,9 @@ title: 'Status' # The site name
 description: 'A status site for the front-end.' # The description
 path: '/' # The path to this page (if a sub-directory; e.g. `/status/`)
 index_section: 'section-one' # Which section would you like to be the index
-success_status: 'Success' # The success status title
-warning_status: 'Warning' # The warning status title
-error_status: 'Error' # The error status title
+success_status: 'Success' # The success status title (e.g. 'Reviewable')
+warning_status: 'Warning' # The warning status title (e.g. 'In Progress')
+error_status: 'Error' # The error status title (e.g. 'Not Started')
 ```
 
 Adding Pages
