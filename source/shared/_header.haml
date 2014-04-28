@@ -11,23 +11,20 @@
 
         %ul.statList.list
           %li.statList-item.list-item
-            .mrm
-              %h3.statList-item-title
-                = get_total_pages()
-                %b Total
+            %h3.statList-item-title
+              %span.tci= get_total_pages()
+              %b Total
           %li.statList-item.list-item
-            .mrm
-              %h3.statList-item-title.statList-item-title--success
-                = get_page_count('success')
-                %b= data.status.success_status
+            %h3.statList-item-title.statList-item-title--success
+              %span= get_page_count('success')
+              %b= data.status.success_status
           %li.statList-item.list-item
-            .mrm
-              %h3.statList-item-title.statList-item-title--warning
-                = get_page_count('warning')
-                %b= data.status.warning_status
+            %h3.statList-item-title.statList-item-title--warning
+              %span= get_page_count('warning')
+              %b= data.status.warning_status
           %li.statList-item.list-item
             %h3.statList-item-title.statList-item-title--error
-              = get_page_count('error')
+              %span= get_page_count('error')
               %b= data.status.error_status
 
 .progress
