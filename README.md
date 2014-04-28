@@ -56,7 +56,6 @@ Open up `data/status.yml` and edit the settings:
 
 ```yaml
 title: 'Status' # The site name
-logo: 'logo.png' # If you want a logo instead of a site title, and it's in `source/assets/images`
 description: 'A status site for the front-end.' # The description
 path: '/' # The path to this page (if a sub-directory; e.g. `/status/`)
 index_section: 'section-one' # Which section would you like to be the index
@@ -65,6 +64,19 @@ success_status: 'Success' # The success status title (e.g. 'Reviewable')
 warning_status: 'Warning' # The warning status title (e.g. 'In Progress')
 error_status: 'Error' # The error status title (e.g. 'Not Started')
 ```
+
+### Logo
+
+If you want to use a logo instead of the title you set above:
+
+1. Add your logo to `source/assets/images`.
+2. Add the `logo` element with the appropriate filename:
+
+```yaml
+logo: 'logo.png'
+```
+
+**Note**: Make sure that you size the logo appropriately to fit the space!
 
 ### Optional Status Types
 
