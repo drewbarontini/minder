@@ -18,9 +18,10 @@
 .statList
   @extend .list--object
   @extend .tss
+  +respond-to($grid-breakpoint-lap)
+    font-size: 100%
   +respond-to($grid-breakpoint-desk)
     float: right
-    font-size: 100%
     margin-top: 0.5 * $b-whitespace
 
 // -------------------------------------
