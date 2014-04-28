@@ -67,7 +67,7 @@ error_status: 'Error' # The error status title (e.g. 'Not Started')
 
 ### Logo
 
-If you want to use a logo instead of the title you set above:
+If you want to use a logo instead of the title text you set above:
 
 1. Add your logo to `source/assets/images`.
 2. Add the `logo` element with the appropriate filename:
