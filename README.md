@@ -59,6 +59,7 @@ title: 'Status' # The site name
 description: 'A status site for the front-end.' # The description
 path: '/' # The path to this page (if a sub-directory; e.g. `/status/`)
 index_section: 'section-one' # Which section would you like to be the index
+# Keep these short, or they'll break in the UI
 success_status: 'Success' # The success status title (e.g. 'Reviewable')
 warning_status: 'Warning' # The warning status title (e.g. 'In Progress')
 error_status: 'Error' # The error status title (e.g. 'Not Started')
