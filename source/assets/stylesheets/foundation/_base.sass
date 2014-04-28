@@ -27,21 +27,34 @@ li
   @extend .mbs
   @extend .mtf
 
-// ----- Headers ----- //
-
 h1, .h1,
-h2, .h2
+h2, .h2,
+h3, .h3,
+h4, .h4
   @extend .mbxs
   @extend .mtf
   @extend .tfh
   @extend .twb
-  line-height: 1.2
+  > b
+    @extend .ttu
+    display: block
+    opacity: 0.65
 
 h1, .h1
   font-size: 200%
+  line-height: 1.4
+  > b
+    font-size: 45%
 
 h2, .h2
   font-size: 150%
+  > b
+    font-size: 55%
+
+h3, .h3
+  font-size: 125%
+  > b
+    font-size: 60%
 
 // -------------------------------------
 //   Inline Content
@@ -49,9 +62,10 @@ h2, .h2
 
 a
   @extend .tch
-  border-bottom: $b-border
+  border-bottom: $b-borderWidth $b-borderStyle $c-highlight
   text-decoration: none
+  transition: all 0.3s ease-in-out
   &:hover,
   &:focus
     @extend .tcs
-    border-bottom-color: $c-highlight
+    border-bottom-color: $c-subdue

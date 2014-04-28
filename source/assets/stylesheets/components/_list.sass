@@ -1,0 +1,98 @@
+// *************************************
+//
+//   List
+//   -> An enumeration of elements
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %ul.list[.list--bordered|bordered--condensed|object]
+//   %li.list-item(.is-active) Item
+//   %li.list-item(.is-active)
+//     %a.list-item-link{href: '#'} Item
+//
+// *************************************
+
+.list
+  @extend .lr
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Bordered ----- //
+
+.list--bordered
+
+  .list-item
+    @extend .bdrb
+    margin: 0
+    padding: (0.5 * $b-whitespace) $b-whitespace
+    &:first-child
+      border-top: $b-border
+
+  .list-item-link
+    border: 0
+    display: block
+    &:hover,
+    &:focus
+      color: lighten($c-highlight, 7%)
+
+// Condensed
+
+.list--bordered.list--bordered--condensed
+
+  .list-item
+    @extend .pas
+
+// ----- Object ----- //
+
+.list--object
+  @extend .group
+
+  .list-item
+    @extend .mbs
+    @extend .mrs
+    float: left
+
+  .list-item--label
+    @extend .mrm
+    @extend .mtxs
+    @extend .tsm
+    @extend .ttu
+    @extend .twb
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.list-item
+  display: block
+  &:last-child
+    @extend .mbf
+
+// Active
+
+.list-item.is-active
+  > a
+    @extend .tcb
+    @extend .twb
+    border-color: $c-base
+
+// Complete
+
+.list-item.is-complete
+
+  .list-item-link
+    @extend .twb
+    color: $c-success
+    &::before
+      @extend .mrs
+
+// Link
+
+.list-item-link
+  @extend .tcs
