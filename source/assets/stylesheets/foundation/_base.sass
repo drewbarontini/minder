@@ -22,6 +22,9 @@ body
 ul, p
   @extend .mbm
   @extend .mtf
+  font-size: 90%
+  +respond-to($grid-breakpoint-desk)
+    font-size: 100%
 
 li
   @extend .mbs
@@ -41,13 +44,17 @@ h4, .h4
     opacity: 0.65
 
 h1, .h1
-  font-size: 200%
+  font-size: 165%
+  +respond-to($grid-breakpoint-desk)
+    font-size: 200%
   line-height: 1.4
   > b
     font-size: 45%
 
 h2, .h2
-  font-size: 150%
+  font-size: 120%
+  +respond-to($grid-breakpoint-desk)
+    font-size: 150%
   > b
     font-size: 55%
 
