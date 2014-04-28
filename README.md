@@ -3,6 +3,8 @@ Status
 
 A Middleman-powered front-end status application.
 
+![Screnshot](http://cl.drewb.io/image/0I1K2s0I2Z29/Status%202014-04-28%2009-34-27%202014-04-28%2009-34-30.png)
+
 ## Installing Middleman
 
 ```shell
