@@ -1,11 +1,14 @@
-%header.row.row--a
+%header.header.row
   .cell
     .grid
       .grid-box.grid-box--desk--2of5
 
-        .mts
-          %h1.mbf.tci= data.status.title
-          %p.tcs= data.status.description
+        .header-item
+          - unless data.status.logo
+            %h1.header-title= data.status.title
+          - else
+            = image_tag data.status.logo, alt: data.status.title, class: 'header-logo'
+          %p.header-desc= data.status.description
 
       .grid-box.grid-box--desk--3of5
 

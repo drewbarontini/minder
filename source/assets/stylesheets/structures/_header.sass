@@ -1,0 +1,44 @@
+// *************************************
+//
+//   Header
+//   -> Lead-in block
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %header.header
+//   %h1.header-title Title
+//   %h1.header-desc This is the description.
+//
+// *************************************
+
+.header
+  @extend .row--a
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Description ----- //
+
+.header-desc
+  color: $header-desc-color
+
+// ----- Item ----- //
+
+.header-item
+  @extend .mts
+
+// ----- Logo ----- //
+
+.header-logo
+  @extend .db
+  @extend .mbs
+
+// ----- Title ----- //
+
+.header-title
+  @extend .mbf
+  color: $header-title-color
+

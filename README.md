@@ -56,6 +56,7 @@ Open up `data/status.yml` and edit the settings:
 
 ```yaml
 title: 'Status' # The site name
+logo: 'logo.png' # If you want a logo instead of a site title, and it's in `source/assets/images`
 description: 'A status site for the front-end.' # The description
 path: '/' # The path to this page (if a sub-directory; e.g. `/status/`)
 index_section: 'section-one' # Which section would you like to be the index
