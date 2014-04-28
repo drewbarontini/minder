@@ -12,23 +12,22 @@
 // *************************************
 
 .well
-  @extend .mbm
-  @extend .mtm
+  @extend .mbs
+  @extend .mts
+  +respond-to($grid-breakpoint-desk)
+    margin-bottom: $b-whitespace
+    margin-top: $b-whitespace
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-// ----- Sizes ----- //
-
-.well.well--s
-  @extend .mbs
-  @extend .mts
+// ----- Large ----- //
 
 .well.well--l
-  @extend .mbl
-  @extend .mtl
+  @extend .mbm
+  @extend .mtm
+  +respond-to($grid-breakpoint-desk)
+    margin-bottom: 2 * $b-whitespace
+    margin-top: 2 * $b-whitespace
 
-.well.well--xl
-  @extend .mbxl
-  @extend .mtxl

@@ -1,4 +1,4 @@
-%ul.list.list--bordered.list--bordered--condensed.mbl.tsm
+%ul.list.list--bordered.list--bordered--condensed.mbm.tsm
   - get_sections().each do |section|
     - section_url = section == index_section ? "#{data.status.path}" : "#{data.status.path}#{section}/"
     %li.list-item{ is_page_active(section_url), class: ('is-complete' if is_section_complete(section)) }
