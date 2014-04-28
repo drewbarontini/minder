@@ -12,11 +12,13 @@
 // *************************************
 
 .card
+  @extend .pas
   @extend .por
   @extend .ram
   background: $card-background
   box-shadow: $b-boxShadow
-  padding: $b-whitespace
+  +respond-to($grid-breakpoint-desk)
+    padding: $b-whitespace
 
 // -------------------------------------
 //   Modifiers
