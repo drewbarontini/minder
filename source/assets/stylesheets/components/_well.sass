@@ -1,24 +1,34 @@
 // *************************************
 //
-//   Row
-//   -> Width-spanning blocks
+//   Well
+//   -> Top and bottom spacing
 //
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// .row[.row--a]
+// .well[.well--s|l|xl]
 //
 // *************************************
 
-.row
-  overflow: hidden
-  padding: 0 $b-whitespace
+.well
+  @extend .mbm
+  @extend .mtm
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-.row--a
-  background: $c-secondary
+// ----- Sizes ----- //
 
+.well.well--s
+  @extend .mbs
+  @extend .mts
+
+.well.well--l
+  @extend .mbl
+  @extend .mtl
+
+.well.well--xl
+  @extend .mbxl
+  @extend .mtxl

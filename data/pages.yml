@@ -1,16 +1,36 @@
-- title: 'Page One'
+- title: 'Page Title'
   link: '#'
   status: 'success'
   type: 'section-one'
 
-- title: 'Page Two'
+- title: 'Page Title'
   link: '#'
   status: 'warning'
-  note: 'This is a note for this page.'
-  type: 'section-two'
+  type: 'section-one'
 
-- title: 'Page Three'
+- title: 'Page Title'
+  link: '#'
+  status: 'warning'
+  type: 'section-one'
+
+- title: 'Page Title'
   link: '#'
   status: 'error'
+  note: 'This is a note for this page.'
+  type: 'section-one'
+
+- title: 'Page Title'
+  link: '#'
+  status: 'success'
+  type: 'section-two'
+
+- title: 'Page Title'
+  link: '#'
+  status: 'success'
+  type: 'section-two'
+
+- title: 'Page Title'
+  link: '#'
+  status: 'success'
   type: 'section-two'
 
