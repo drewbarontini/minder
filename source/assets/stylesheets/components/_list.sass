@@ -53,8 +53,10 @@
 
   .list-item
     @extend .mbs
-    @extend .mrl
+    @extend .mrm
     float: left
+    +respond-to($grid-breakpoint-desk)
+      margin-right: 2 * $b-whitespace
     &:last-child
       margin-right: 0
 
