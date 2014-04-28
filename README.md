@@ -3,9 +3,8 @@ Status
 
 A Middleman-powered front-end status application.
 
-![Screnshot](http://cl.drewb.io/image/0I1K2s0I2Z29/Status%202014-04-28%2009-34-27%202014-04-28%2009-34-30.png)
-
-## Installing Middleman
+Installing Middleman
+--------------------
 
 ```shell
 gem install middleman
@@ -17,7 +16,8 @@ Then run:
 bundle install
 ```
 
-## Running the Application
+Running the Application
+-----------------------
 
 You run the application by starting the Middleman server:
 
@@ -31,7 +31,8 @@ If you're using Rbenv with binstubs:
 ./bin/middleman s
 ```
 
-## Building the Static Files
+Building the Static Files
+-------------------------
 
 To build the static files:
 
@@ -80,3 +81,9 @@ Next, add your pages to `data/pages.yml`:
 
 You'll need to restart your Middleman server to see the changes if you add new pages or sections.
 
+Deploying
+---------
+
+If you'd like to deploy the site, add a `Rakefile` and take a look at the [Baseman](https://github.com/drewbarontini/baseman#deploying) deploy documentation.
+
+**Note**: Be sure to remove the `Rakefile` from the `.gitignore`!
