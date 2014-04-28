@@ -69,5 +69,5 @@ Next, add your pages to `data/pages.yml`:
   status: 'success' # The page status ('success', 'error', or 'warning')
   note: 'This is a note for the page.' # Optional page note
   type: 'section-one' # The section it belongs to (generates URL and sidebar item)
-``
+```
 
