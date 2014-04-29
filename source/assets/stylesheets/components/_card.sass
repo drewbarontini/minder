@@ -16,7 +16,7 @@
   @extend .por
   @extend .ram
   background: $card-background
-  box-shadow: $b-boxShadow
+  border: $card-borderWidth $b-borderStyle $b-borderColor
   +respond-to($grid-breakpoint-lap)
     padding: $b-whitespace
 
@@ -27,14 +27,11 @@
 // ----- Types ----- //
 
 .card--error
-  box-shadow: none
-  border: $card-borderWidth $b-borderStyle $c-error
+  border-color: $c-error
 
 .card--success
-  box-shadow: none
-  border: $card-borderWidth $b-borderStyle $c-success
+  border-color: $c-success
 
 .card--warning
-  box-shadow: none
-  border: $card-borderWidth $b-borderStyle $c-warning
+  border-color: $c-warning
 
