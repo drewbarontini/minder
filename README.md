@@ -19,6 +19,8 @@ Then run:
 bundle install
 ```
 
+If you use `binstubs`, run `bundle install --binstubs`.
+
 Running the Application
 -----------------------
 
