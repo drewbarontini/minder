@@ -39,3 +39,8 @@
   status: 'error'
   type: 'section-three'
 
+- title: 'Page Title'
+  link: '#'
+  status: 'error'
+  type: 'section-three'
+
