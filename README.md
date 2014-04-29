@@ -108,6 +108,11 @@ Next, add your pages to `data/pages.yml`:
 
 You'll need to restart your Middleman server to see the changes if you add new pages or sections.
 
+Referencing Local Files
+-----------------------
+
+If you want to include your files in the local Middleman version rather than linking offsite, you can use the `source/layouts/blank.haml` file, and then follow the Middlman documentation on [Custom Layouts](http://middlemanapp.com/basics/templates/) to use that layout file for your local pages. 
+
 Deploying
 ---------
 
