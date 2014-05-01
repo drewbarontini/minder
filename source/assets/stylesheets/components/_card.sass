@@ -12,10 +12,10 @@
 // *************************************
 
 .card
-  @extend .pas
-  @extend .ram
   background: $card-background
   border: $card-borderWidth $b-borderStyle $b-borderColor
+  border-radius: $b-borderRadius
+  padding: $b-whitespace-s
   position: relative
   +respond-to($grid-breakpoint-lap)
     padding: $b-whitespace

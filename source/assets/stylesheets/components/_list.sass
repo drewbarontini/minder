@@ -44,7 +44,7 @@
 .list--bordered.list--bordered--condensed
 
   .list-item
-    @extend .pas
+    padding: $b-whitespace-s
 
 // ----- Object ----- //
 
@@ -52,20 +52,20 @@
   @extend .group
 
   .list-item
-    @extend .mbs
-    @extend .mrm
     float: left
+    margin-bottom: $b-whitespace-s
+    margin-right: $b-whitespace
     +respond-to($grid-breakpoint-desk)
       margin-right: 2 * $b-whitespace
     &:last-child
       margin-right: 0
 
   .list-item--label
-    @extend .mrm
-    @extend .mtxs
-    @extend .tsm
-    @extend .ttu
-    @extend .twb
+    font-size: $b-fontSize-m
+    font-weight: bold
+    margin-right: $b-whitespace
+    margin-top: $b-whitespace-xs
+    text-transform: uppercase
 
 // -------------------------------------
 //   Scaffolding
@@ -76,27 +76,27 @@
 .list-item
   display: block
   &:last-child
-    @extend .mbf
+    margin-bottom: 0
 
 // Active
 
 .list-item.is-active
   > a
-    @extend .tcb
-    @extend .twb
     border-color: $c-base
+    color: $c-base
+    font-weight: bold
 
 // Complete
 
 .list-item.is-complete
 
   .list-item-link
-    @extend .twb
     color: $c-success
+    font-weight: bold
     &::before
-      @extend .mrs
+      margin-right: $b-whitespace-s
 
 // Link
 
 .list-item-link
-  @extend .tcs
+  color: $c-subdue

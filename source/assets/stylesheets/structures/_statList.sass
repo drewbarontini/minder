@@ -17,7 +17,7 @@
 
 .statList
   @extend .list--object
-  @extend .tss
+  font-size: $b-fontSize-s
   +respond-to($grid-breakpoint-lap)
     font-size: 100%
   +respond-to($grid-breakpoint-desk)
@@ -34,21 +34,21 @@
 
 .statList-item-title
   @extend .h1
-  @extend .tac
-  @extend .tcs
+  color: $c-subdue
+  text-align: center
 
 // Error
 
 .statList-item-title.statList-item-title--error
-  @extend .tce
+  color: $c-error
 
 // Success
 
 .statList-item-title.statList-item-title--success
-  @extend .tcu
+  color: $c-success
 
 // Warning
 
 .statList-item-title.statList-item-title--warning
-  @extend .tcw
+  color: $c-warning
 
