@@ -4,7 +4,7 @@ Minder (v1.0.0)
 > A minder is a person assigned to guide or escort a visitor, or to provide
 > protection to somebody, or to otherwise assist or take care of something.
 
-**Minder** is a Middleman-powered site used to oversee your front-end.
+**Minder** is a Middleman-powered application used to oversee your front-end.
 
 - When building out a front-end for a site, add pages for the designer to review once the front-end is implemented.
 - Use the list to mark the status of live pages on a front-end and mark the bug-free, completed pages.
