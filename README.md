@@ -1,4 +1,4 @@
-Status
+Status (v1.0.1)
 ======
 
 A Middleman-powered front-end status application. Use cases:
