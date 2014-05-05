@@ -9,7 +9,7 @@ Minder (v1.0.0)
 - When building out a front-end for a site, add pages for the designer to review once the front-end is implemented.
 - Use the list to mark the status of live pages on a front-end and mark the bug-free, completed pages.
 
-To set this up, all you have to do is edit two YAML files, a configuration file and the list of pages. Once that is done, simply build and deploy your site!
+To set this up, all you have to do is edit two YAML files, a configuration file and the list of pages. Once that is done, simply build and deploy your site! That's it. The YAML files are used to generate all of the stats, the sections, the sidebar, and the unique URLs for each section. Look at the **Setup** and **Adding Pages** sections below.
 
 Installing Middleman
 --------------------
