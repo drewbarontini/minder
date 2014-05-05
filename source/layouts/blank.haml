@@ -7,9 +7,9 @@
 
     / Use title if it's in the page YAML frontmatter
     - if yield_content(:title)
-      %title= "#{ yield_content(:title) } - #{data.status.title}"
+      %title= "#{ yield_content(:title) } - #{data.config.title}"
     - else
-      %title= data.status.title
+      %title= data.config.title
 
     = stylesheet_link_tag 'application'
 

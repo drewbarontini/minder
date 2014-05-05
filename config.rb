@@ -8,8 +8,8 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
-set :index_section, data.status.index_section
-set :status_path, data.status.path
+set :index_section, data.config.index_section
+set :status_path, data.config.path
 
 ignore "#{status_path}template.haml"
 

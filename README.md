@@ -1,10 +1,16 @@
 Status (v1.0.1)
-======
+Minder (v1.0.0)
 
-A Middleman-powered front-end status application. Use cases:
+> A minder is a person assigned to guide or escort a visitor, or to provide
+> protection to somebody, or to otherwise assist or take care of something,
+> i.e. a person who "minds".
 
-- When building out a front-end for a site, adding pages for the designer to review once the front-end is implemented.
-- Using the list to mark the status of live pages on a front-end and mark the bug-free, completed pages.
+**Minder** is a Middleman-powered site used to oversee your front-end.
+
+- When building out a front-end for a site, add pages for the designer to review once the front-end is implemented.
+- Use the list to mark the status of live pages on a front-end and mark the bug-free, completed pages.
+
+To set this up, all you have to do is edit two YAML files, a configuration file and the list of pages. Once that is done, simply build and deploy your site!
 
 Installing Middleman
 --------------------

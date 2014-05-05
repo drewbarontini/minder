@@ -4,11 +4,11 @@
       .grid-box.grid-box--desk--2of5
 
         .header-item
-          - unless data.status.logo
-            %h1.header-title= data.status.title
+          - unless data.config.logo
+            %h1.header-title= data.config.title
           - else
-            = image_tag data.status.logo, alt: data.status.title, class: 'header-logo'
-          %p.header-desc= data.status.description
+            = image_tag data.config.logo, alt: data.config.title, class: 'header-logo'
+          %p.header-desc= data.config.description
 
       .grid-box.grid-box--desk--3of5
 
@@ -17,21 +17,21 @@
             %h3.statList-item-title
               %span.tci= get_total_pages()
               %b Total
-          - if data.status.success_status
+          - if data.config.success_status
             %li.statList-item.list-item
               %h3.statList-item-title.statList-item-title--success
                 %span= get_page_count('success')
-                %b= data.status.success_status
-          - if data.status.warning_status
+                %b= data.config.success_status
+          - if data.config.warning_status
             %li.statList-item.list-item
               %h3.statList-item-title.statList-item-title--warning
                 %span= get_page_count('warning')
-                %b= data.status.warning_status
-          - if data.status.error_status
+                %b= data.config.warning_status
+          - if data.config.error_status
             %li.statList-item.list-item
               %h3.statList-item-title.statList-item-title--error
                 %span= get_page_count('error')
-                %b= data.status.error_status
+                %b= data.config.error_status
 
 .progress
   .progress-bar{ style: "width: #{ get_build_progress() }%"}

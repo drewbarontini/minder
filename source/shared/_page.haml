@@ -3,10 +3,10 @@
   %p{ class: ('mbf' unless note) }
     %strong Status:
     - if status == 'success'
-      %span.tsi= data.status.success_status
+      %span.tsi= data.config.success_status
     - elsif status == 'warning'
-      %span.tsi= data.status.warning_status
+      %span.tsi= data.config.warning_status
     - else
-      %span.tsi= data.status.error_status
+      %span.tsi= data.config.error_status
   - if note
     %p.mbf= note

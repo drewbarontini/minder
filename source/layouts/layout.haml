@@ -7,15 +7,15 @@
 
     / Use title if it's in the page YAML frontmatter
     - if yield_content(:title)
-      %title= "#{ yield_content(:title) } - #{data.status.title}"
+      %title= "#{ yield_content(:title) } - #{data.config.title}"
     - else
-      %title= data.status.title
+      %title= data.config.title
 
     = stylesheet_link_tag 'application'
 
   %body{ class: page_classes }
 
-    = partial "#{data.status.path}shared/header"
+    = partial "#{data.config.path}shared/header"
 
     .row
       .cell.well--l
@@ -23,7 +23,7 @@
           .grid
             .grid-box.grid-box--desk--1of4
 
-              = partial "#{data.status.path}shared/nav"
+              = partial "#{data.config.path}shared/nav"
 
             .grid-box.grid-box--desk--3of4
 
