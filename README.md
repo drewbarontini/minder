@@ -2,8 +2,7 @@ Minder (v1.0.0)
 ===============
 
 > A minder is a person assigned to guide or escort a visitor, or to provide
-> protection to somebody, or to otherwise assist or take care of something,
-> i.e. a person who "minds".
+> protection to somebody, or to otherwise assist or take care of something.
 
 **Minder** is a Middleman-powered site used to oversee your front-end.
 
