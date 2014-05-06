@@ -2,4 +2,7 @@
   - get_sections().each do |section|
     - section_url = section == index_section ? "#{data.config.path}" : "#{data.config.path}#{section}/"
     %li.list-item{ is_page_active(section_url), class: ('is-complete' if is_section_complete(section)) }
-      = link_to section.titleize, section_url, class: 'list-item-link'
+      - if section == index_section
+        = link_to section.titleize, 'index.html', class: 'list-item-link'
+      - else
+        = link_to section.titleize, "/#{section}.html", class: 'list-item-link'
