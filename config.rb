@@ -8,6 +8,8 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
+set :relative_links, true
+
 set :index_section, data.config.index_section
 set :status_path, data.config.path
 
