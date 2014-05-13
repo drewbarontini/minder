@@ -40,6 +40,18 @@ helpers do
     pages.count
   end
 
+  def get_section_page_count(section, status = nil)
+    pages = []
+    data.pages.each do |p|
+      unless status
+        pages << p if p.type == section
+      else
+        pages << p if p.type == section and p.status == status
+      end
+    end
+    pages.count
+  end
+
   def get_build_progress
     total =  get_total_pages()
     complete = get_page_count('success')

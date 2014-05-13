@@ -1,6 +1,8 @@
 - unless page_name == index_section
   - content_for(:title, page_name.titleize)
 
+= partial "#{data.config.path}shared/section_header", locals: { section: page_name }
+
 - data.pages.select{ |page| page.type == page_name }.each do |p|
   = partial "#{data.config.path}shared/page", locals: { status: p.status, page: p.title, link: p.link, note: p.note }
 
