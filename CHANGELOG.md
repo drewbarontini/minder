@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.2.0
+**May 28, 2014**
+
+- Status links now filter all/related section by the status
+
 ## Version 1.1.0
 **May 13, 2014**
 

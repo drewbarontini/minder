@@ -1,0 +1,5 @@
+- content_for(:title, status.titleize)
+
+- data.pages.select{ |page| page.status == status }.each do |p|
+  = partial "#{data.config.path}shared/page", locals: { status: p.status, page: p.title, link: p.link, note: p.note }
+

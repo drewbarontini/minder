@@ -14,6 +14,7 @@ set :index_section, data.config.index_section
 set :status_path, data.config.path
 
 ignore "#{status_path}template.haml"
+ignore "#{status_path}type.haml"
 
 helpers do
   def is_page_active(page)
@@ -30,6 +31,14 @@ helpers do
       sections << p.type
     end
     sections.uniq
+  end
+
+  def get_status_types
+    types = []
+    data.pages.each do |p|
+      types << p.status
+    end
+    types.uniq
   end
 
   def get_page_count(status)
@@ -66,6 +75,10 @@ helpers do
     complete += data.pages.select { |p| p.type == type && p.status == 'success' }
     total.count == complete.count ? true : false
   end
+
+  def slugify(string)
+    string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  end
 end
 
 get_sections().each do |page|
@@ -74,6 +87,10 @@ get_sections().each do |page|
   else
     proxy "#{status_path}#{page}.html", "#{status_path}template.html", locals: { :page_name => page }
   end
+end
+
+get_status_types().each do |status|
+  proxy "#{status_path}#{status}.html", "#{status_path}type.html", locals: { :status => status }
 end
 
 # Build-specific configuration
