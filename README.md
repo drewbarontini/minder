@@ -11,11 +11,11 @@ Minder
 
 To set this up, all you have to do is edit two YAML files, a configuration file and the list of pages. Once that is done, simply build and deploy your site! That's it. The YAML files are used to generate all of the stats, the sections, the sidebar, and the unique URLs for each section. Look at the **Setup** and **Adding Pages** sections below.
 
-Installing Middleman
---------------------
+Setup
+-----
 
 ```shell
-gem install middleman
+gem install bundler
 ```
 
 Then run:
