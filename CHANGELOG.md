@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.2.1
+**June 09, 2014**
+
+- Update to the latest version of [MVCSS](http://mvcss.github.io/)
+
 ## Version 1.2.0
 **May 28, 2014**
 
