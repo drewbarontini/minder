@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.2.4 - 2014-07-02
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Card border color variable
+
 1.2.3 - 2014-07-02
 ------------------
 
