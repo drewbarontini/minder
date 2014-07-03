@@ -14,10 +14,49 @@
 @import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700"
 
 // -------------------------------------
-//   Variables
+//   Colors
 // -------------------------------------
 
 // ----- Base ----- //
+
+$c-background-invert: #fff
+$c-background: #f2f2f2
+$c-error: #c0392b
+$c-highlight: #3498db
+$c-secondary: #000
+$c-subdue: #999
+$c-success: #27ae60
+$c-text-invert: #fff
+$c-text: #222
+$c-warning: #f39c12
+
+// ----- Components ----- //
+
+// Card
+
+$card-background: $c-background-invert
+
+// Row
+
+$row--a-background: $c-secondary
+
+// ----- Structures ----- //
+
+// Header
+
+$header-desc-color: $c-subdue
+$header-title-color: $c-text-invert
+
+// Progress
+
+$progress-background: $c-background-invert
+$progress-bar-background: $c-highlight
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
 
 $b-borderColor: #ccc
 $b-borderStyle: solid
@@ -25,6 +64,11 @@ $b-borderWidth: 1px
 $b-border: $b-borderWidth $b-borderStyle $b-borderColor
 $b-borderRadius: 3px
 $b-boxShadow: 0 2px 0 rgba(#222, 0.15)
+
+// ----- Typography ----- //
+
+$b-fontFamily: 'Open Sans', Helvetica, Arial, sans-serif
+$b-fontFamily-heading: 'Open Sans', Helvetica, Arial, sans-serif
 $b-fontSize: 16px
 $b-fontSize-xs: 60%
 $b-fontSize-s: 75%
@@ -32,54 +76,29 @@ $b-fontSize-m: 90%
 $b-fontSize-l: 115%
 $b-fontSize-xl: 150%
 $b-lineHeight: 1.5
-$b-maxWidth: 56.25em
-$b-whitespace: 1.25em
-$b-whitespace-xs: 0.25 * $b-whitespace
-$b-whitespace-s: 0.5 * $b-whitespace
-$b-whitespace-l: 2 * $b-whitespace
-$b-whitespace-xl: 4 * $b-whitespace
 
-// ----- Colors ----- //
+// ----- Sizing ----- //
 
-$c-background: #f2f2f2
-$c-base: #222
-$c-error: #c0392b
-$c-highlight: #3498db
-$c-invert: #fff
-$c-secondary: #000
-$c-subdue: #999
-$c-success: #27ae60
-$c-warning: #f39c12
+$b-maxWidth: em(900px)
+$b-space: em(20px)
+$b-space-xs: 0.25 * $b-space
+$b-space-s: 0.5 * $b-space
+$b-space-l: 2 * $b-space
+$b-space-xl: 4 * $b-space
 
-// ----- Fonts ----- //
-
-$f-base: 'Open Sans', Helvetica, Arial, sans-serif
-$f-header: 'Open Sans', Helvetica, Arial, sans-serif
+// -------------------------------------
+//   Components
+// -------------------------------------
 
 // ----- Card ----- //
 
-$card-background: $c-invert
 $card-borderWidth: 2px
 
 // ----- Grid ----- //
 
-$grid-breakpoint-lap: 30em // ~480px
-$grid-breakpoint-desk: 50em // ~800px
-$grid-columns: 5
-$grid-defaults: "lap" $grid-breakpoint-lap, "desk" $grid-breakpoint-desk
-$grid-gutter: 30px
-$grid-silent: false
+$g-s: em(480px) // ~480px
+$g-m: em(800px) // ~800px
 
-// ----- Header ----- //
+$g-columns: 5
+$g-gutter: 30px
 
-$header-desc-color: $c-subdue
-$header-title-color: $c-invert
-
-// ----- Progress ----- //
-
-$progress-background: $c-invert
-$progress-bar-background: $c-highlight
-
-// ----- Row ----- //
-
-$row--a-background: $c-secondary

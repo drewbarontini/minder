@@ -1,7 +1,7 @@
 %header.header.row
   .cell
-    .grid
-      .grid-box.grid-box--desk--2of5
+    .g
+      .g-b.g-b--m--2of5
 
         .header-item
           - unless data.config.logo
@@ -10,7 +10,7 @@
             = image_tag data.config.logo, alt: data.config.title, class: 'header-logo'
           %p.header-desc= data.config.description
 
-      .grid-box.grid-box--desk--3of5
+      .g-b.g-b--m--3of5
 
         %ul.statList.list
           %li.statList-item.list-item

@@ -28,7 +28,7 @@
   .list-item
     border-bottom: $b-border
     margin: 0
-    padding: (0.5 * $b-whitespace) $b-whitespace
+    padding: (0.5 * $b-space) $b-space
     &:first-child
       border-top: $b-border
 
@@ -44,7 +44,7 @@
 .list--bordered.list--bordered--condensed
 
   .list-item
-    padding: $b-whitespace-s
+    padding: $b-space-s
 
 // ----- Inline ----- //
 
@@ -53,8 +53,8 @@
   .list-item
     border-right: $b-border
     display: inline
-    margin-right: $b-whitespace
-    padding-right: $b-whitespace-s
+    margin-right: $b-space
+    padding-right: $b-space-s
     &:last-child
       border-right: 0
       margin-right: 0
@@ -66,18 +66,18 @@
 
   .list-item
     float: left
-    margin-bottom: $b-whitespace-s
-    margin-right: $b-whitespace
-    +respond-to($grid-breakpoint-desk)
-      margin-right: 2 * $b-whitespace
+    margin-bottom: $b-space-s
+    margin-right: $b-space
+    +respond-to($g-m)
+      margin-right: 2 * $b-space
     &:last-child
       margin-right: 0
 
   .list-item--label
     font-size: $b-fontSize-m
     font-weight: bold
-    margin-right: $b-whitespace
-    margin-top: $b-whitespace-xs
+    margin-right: $b-space
+    margin-top: $b-space-xs
     text-transform: uppercase
 
 // -------------------------------------
@@ -95,8 +95,8 @@
 
 .list-item.is-active
   > a
-    border-color: $c-base
-    color: $c-base
+    border-color: $c-text
+    color: $c-text
     font-weight: bold
 
 // Complete
@@ -107,7 +107,7 @@
     color: $c-success
     font-weight: bold
     &::before
-      margin-right: $b-whitespace-s
+      margin-right: $b-space-s
 
 // Link
 

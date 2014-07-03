@@ -7,8 +7,8 @@
 
 html
   background: $c-background
-  color: $c-base
-  font-family: $f-base
+  color: $c-text
+  font-family: $b-fontFamily
   font-size: $b-fontSize
   line-height: $b-lineHeight
 
@@ -21,22 +21,22 @@ body
 
 ul, p
   font-size: 90%
-  margin-bottom: $b-whitespace
+  margin-bottom: $b-space
   margin-top: 0
-  +respond-to($grid-breakpoint-desk)
+  +respond-to($g-m)
     font-size: 100%
 
 li
-  margin-bottom: $b-whitespace-s
+  margin-bottom: $b-space-s
   margin-top: 0
 
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4
-  font-family: $f-header
+  font-family: $b-fontFamily-heading
   font-weight: bold
-  margin-bottom: $b-whitespace-xs
+  margin-bottom: $b-space-xs
   margin-top: 0
   > b
     display: block
@@ -45,7 +45,7 @@ h4, .h4
 
 h1, .h1
   font-size: 165%
-  +respond-to($grid-breakpoint-desk)
+  +respond-to($g-m)
     font-size: 200%
   line-height: 1.4
   > b
@@ -53,7 +53,7 @@ h1, .h1
 
 h2, .h2
   font-size: 120%
-  +respond-to($grid-breakpoint-desk)
+  +respond-to($g-m)
     font-size: 150%
   > b
     font-size: 55%

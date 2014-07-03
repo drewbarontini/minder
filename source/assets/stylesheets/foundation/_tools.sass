@@ -5,36 +5,14 @@
 //
 // *************************************
 
-// ----- Box Sizing ----- //
-
-.boxSizing
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-
-// ----- Clearfix ----- //
-
-.group::after
-  clear: both
-  content: ''
-  display: table
-
-// ----- List Reset ----- //
-
-.lr
-  list-style-type: none
-  margin: 0
-  padding: 0
-
 // -------------------------------------
 //   Background
 // -------------------------------------
 
-.bcb
-  background: $c-base
 .bch
   background: $c-highlight
 .bci
-  background: $c-invert
+  background: $c-background-invert
 .bcs
   background: $c-subdue
 
@@ -54,11 +32,11 @@
 .mbf
   margin-bottom: 0
 .mbxs
-  margin-bottom: $b-whitespace-xs
+  margin-bottom: $b-space-xs
 .mbs
-  margin-bottom: $b-whitespace-s
+  margin-bottom: $b-space-s
 .mbm
-  margin-bottom: $b-whitespace
+  margin-bottom: $b-space
 
 // ----- Horizontal ----- //
 
@@ -69,20 +47,20 @@
 // ----- Right ----- //
 
 .mrs
-  margin-right: $b-whitespace-s
+  margin-right: $b-space-s
 .mrm
-  margin-right: $b-whitespace
+  margin-right: $b-space
 
 // ----- Top ----- //
 
 .mtf
   margin-top: 0
 .mtxs
-  margin-top: $b-whitespace-xs
+  margin-top: $b-space-xs
 .mts
-  margin-top: $b-whitespace-s
+  margin-top: $b-space-s
 .mtm
-  margin-top: $b-whitespace
+  margin-top: $b-space
 
 // -------------------------------------
 //   Padding
@@ -91,7 +69,7 @@
 // ----- All ----- //
 
 .pas
-  padding: $b-whitespace-s
+  padding: $b-space-s
 
 // -------------------------------------
 //   Rounding
@@ -111,16 +89,16 @@
 
 // ----- Color ----- //
 
-.tcb
-  color: $c-base
 .tce
   color: $c-error
 .tch
   color: $c-highlight
 .tci
-  color: $c-invert
+  color: $c-text-invert
 .tcs
   color: $c-subdue
+.tct
+  color: $c-text
 .tcu
   color: $c-success
 .tcw
@@ -129,9 +107,9 @@
 // ----- Family ----- //
 
 .tfb
-  font-family: $f-base
+  font-family: $b-fontFamily
 .tfh
-  font-family: $f-header
+  font-family: $b-fontFamily-heading
 
 // ----- Size ----- //
 
