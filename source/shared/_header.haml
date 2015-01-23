@@ -19,19 +19,19 @@
               %b Total
           - if data.config.success_status
             %li.statList-item.list-item
-              = link_to "#{slugify(data.config.success_status)}.html", class: 'statList-item-link' do
+              = link_to "#{ slugify(data.config.success_status) }.html", class: 'statList-item-link' do
                 %h3.statList-item-title.statList-item-title--success
                   %span= get_page_count('success')
                   %b= data.config.success_status
           - if data.config.warning_status
             %li.statList-item.list-item
-              = link_to "#{slugify(data.config.warning_status)}.html", class: 'statList-item-link' do
+              = link_to "#{ slugify(data.config.warning_status) }.html", class: 'statList-item-link' do
                 %h3.statList-item-title.statList-item-title--warning
                   %span= get_page_count('warning')
                   %b= data.config.warning_status
           - if data.config.error_status
             %li.statList-item.list-item
-              = link_to "#{slugify(data.config.error_status)}.html", class: 'statList-item-link' do
+              = link_to "#{ slugify(data.config.error_status) }.html", class: 'statList-item-link' do
                 %h3.statList-item-title.statList-item-title--error
                   %span= get_page_count('error')
                   %b= data.config.error_status

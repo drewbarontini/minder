@@ -1,7 +1,15 @@
+# ====================================
+#   Activate Plugins
+# ====================================
+
 activate :automatic_image_sizes
 activate :directory_indexes
 activate :livereload
 activate :minify_html
+
+# ====================================
+#   Global Variables
+# ====================================
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
@@ -13,75 +21,32 @@ set :relative_links, true
 set :index_section, data.config.index_section
 set :status_path, data.config.path
 
-ignore "#{status_path}template.haml"
-ignore "#{status_path}type.haml"
+# ====================================
+#   Ignore Files & Directories
+# ====================================
+
+ignore "#{ status_path }template.haml"
+ignore "#{ status_path }type.haml"
+
+# ====================================
+#   Helpers
+# ====================================
 
 helpers do
-  def is_page_active(page)
-    current_page.url == page ? { class: 'is-active' } : {}
-  end
-
-  def get_total_pages
-    data.pages.count
-  end
-
   def get_sections
-    sections = []
-    data.pages.each do |p|
-      sections << p.type
-    end
-    sections.uniq
+    data.pages.map { |page| page.type }.uniq
   end
 
   def get_status_types
-    types = []
-    data.pages.each do |p|
-      types << p.status
-    end
-    types.uniq
-  end
-
-  def get_page_count(status)
-    pages = []
-    data.pages.each do |p|
-      pages << p if p.status == status
-    end
-    pages.count
-  end
-
-  def get_section_page_count(section, status = nil)
-    pages = []
-    data.pages.each do |p|
-      unless status
-        pages << p if p.type == section
-      else
-        pages << p if p.type == section and p.status == status
-      end
-    end
-    pages.count
-  end
-
-  def get_build_progress
-    total =  get_total_pages()
-    complete = get_page_count('success')
-    progress = (complete.to_f / total.to_f) * 100
-    progress.ceil
-  end
-
-  def is_section_complete(type)
-    complete = []
-    total = []
-    total += data.pages.select { |p| p.type == type }
-    complete += data.pages.select { |p| p.type == type && p.status == 'success' }
-    total.count == complete.count ? true : false
-  end
-
-  def slugify(string)
-    string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+    data.pages.map { |page| page.status }.uniq
   end
 end
 
-get_sections().each do |page|
+# ====================================
+#   Template Files
+# ====================================
+
+get_sections.each do |page|
   if page == index_section
     proxy "#{status_path}index.html", "#{status_path}template.html", locals: { :page_name => page }
   else
@@ -89,11 +54,14 @@ get_sections().each do |page|
   end
 end
 
-get_status_types().each do |status|
+get_status_types.each do |status|
   proxy "#{status_path}#{status}.html", "#{status_path}type.html", locals: { :status => status }
 end
 
-# Build-specific configuration
+# ====================================
+#   Build Configuration
+# ====================================
+
 configure :build do
   activate :minify_css
   activate :minify_javascript

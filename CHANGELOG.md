@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.3.0 - 2015-01-23
+------------------
+
+### Added
+
+- Better Ruby comments
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Cleaner Ruby code for page data manipulation
+
 1.2.4 - 2014-07-02
 ------------------
 

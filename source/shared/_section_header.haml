@@ -1,33 +1,51 @@
 %header.mbm
+
   %h2.mbf= section.titleize
+
   %ul.list.list--inline.tcs
+
     %li.list-item
       %strong= get_section_page_count(section)
       total pages
+
     %li.list-item
+
       - unless get_section_page_count(section, 'success') == 0
-        = link_to "##{slugify(data.config.success_status)}", class: 'bdrn tcu js-hashLink' do
+
+        = link_to "##{ slugify(data.config.success_status) }", class: 'bdrn tcu js-hashLink' do
           %strong= get_section_page_count(section, 'success')
           = data.config.success_status.downcase
+
       - else
+
         %span.tcu
           %strong= get_section_page_count(section, 'success')
           = data.config.success_status.downcase
+
     %li.list-item
+
       - unless get_section_page_count(section, 'warning') == 0
-        = link_to "##{slugify(data.config.warning_status)}", class: 'bdrn tcw js-hashLink' do
+
+        = link_to "##{ slugify(data.config.warning_status) }", class: 'bdrn tcw js-hashLink' do
           %strong= get_section_page_count(section, 'warning')
           = data.config.warning_status.downcase
+
       - else
+
         %span.tcw
           %strong= get_section_page_count(section, 'warning')
           = data.config.warning_status.downcase
+
     %li.list-item
+
       - unless get_section_page_count(section, 'error') == 0
-        = link_to "##{slugify(data.config.error_status)}", class: 'bdrn tce js-hashLink' do
+
+        = link_to "##{ slugify(data.config.error_status) }", class: 'bdrn tce js-hashLink' do
           %strong= get_section_page_count(section, 'error')
           = data.config.error_status.downcase
+
       - else
+
         %span.tce
           %strong= get_section_page_count(section, 'error')
           = data.config.error_status.downcase

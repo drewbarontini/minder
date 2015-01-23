@@ -1,6 +1,9 @@
-%div{ class: "card card--#{status} mbm" }
+%div{ class: "card card--#{ status } mbm" }
+
   %h2= link_to page, link
+
   %p{ class: ('mbf' unless note) }
+
     %strong Status:
     - if status == 'success'
       %span.tsi= data.config.success_status
@@ -8,5 +11,6 @@
       %span.tsi= data.config.warning_status
     - else
       %span.tsi= data.config.error_status
+
   - if note
     %p.mbf= note
