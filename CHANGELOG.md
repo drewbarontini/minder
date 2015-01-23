@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.3.1 - 2015-01-23
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- The `build/` directory from the repo
+
+### Fixed
+
+- Nothing
+
 1.3.0 - 2015-01-23
 ------------------
 
