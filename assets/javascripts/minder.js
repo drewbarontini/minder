@@ -1,0 +1,1 @@
+(function(){this.Minder={}}).call(this);
