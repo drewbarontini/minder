@@ -1,6 +1,23 @@
 Changelog
 =========
 
+2.0.0 - 2015-02-16
+------------------
+
+### Added
+
+- Autoprefixer
+
+### Removed
+
+- Unnecessary extends
+
+### Fixed
+
+- Update to MVCSS 4.0.8
+- Update jQuery to 2.1.3
+- Better JavaScript organization
+
 1.3.1 - 2015-01-23
 ------------------
 
