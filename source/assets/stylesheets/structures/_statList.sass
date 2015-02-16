@@ -7,19 +7,20 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// %ul.statList.list
-//   %li.statList-item.list-item
-//     %h3.statList-item-title[.statList-item-title--error|success|warning]
-//       12
-//       %b Title
+// %ul.list.statList
+//
+//   %li.list-item.statList-item
+//     %h3.statList-item-title[error|success|warning]
+//       / ...
 //
 // *************************************
 
 .statList
-  @extend .list--object
   font-size: $b-fontSize-s
+
   +respond-to($g-s)
     font-size: 100%
+
   +respond-to($g-m)
     float: right
     margin-top: 0.5 * $b-space
@@ -36,6 +37,7 @@
   border: 0
   display: block
   transition: opacity 0.2s ease-in-out
+
   &:hover,
   &:focus
     opacity: 0.75
@@ -43,7 +45,6 @@
 // Title
 
 .statList-item-title
-  @extend .h1
   color: $c-subdue
   text-align: center
 
@@ -61,4 +62,3 @@
 
 .statList-item-title.statList-item-title--warning
   color: $c-warning
-

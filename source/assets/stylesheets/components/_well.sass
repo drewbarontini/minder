@@ -7,13 +7,14 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .well[.well--s|l|xl]
+// .well[s|l|xl]
 //
 // *************************************
 
 .well
   margin-bottom: $b-space-s
   margin-top: $b-space-s
+
   +respond-to($g-s)
     margin-bottom: $b-space
     margin-top: $b-space
@@ -22,12 +23,12 @@
 //   Modifiers
 // -------------------------------------
 
-// ----- Large ----- //
+// ----- Sizes ----- //
 
 .well--l
   margin-bottom: $b-space
   margin-top: $b-space
+
   +respond-to($g-m)
     margin-bottom: 2 * $b-space
     margin-top: 2 * $b-space
-

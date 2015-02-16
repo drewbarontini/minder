@@ -8,7 +8,7 @@
 // -------------------------------------
 //
 // .progress
-//   .progress-bar{style: 'width: 65%;'}
+//   .progress-bar{ style: 'width: 65%;' }
 //
 // *************************************
 
@@ -24,9 +24,9 @@
 // ----- Bar ----- //
 
 .progress-bar
-  @extend .boxSizing
   background: $progress-bar-background
   bottom: 0
+  box-sizing: border-box
   left: 0
   max-width: 100%
   position: absolute

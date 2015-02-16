@@ -23,6 +23,7 @@ ul, p
   font-size: 90%
   margin-bottom: $b-space
   margin-top: 0
+
   +respond-to($g-m)
     font-size: 100%
 
@@ -38,6 +39,7 @@ h4, .h4
   font-weight: bold
   margin-bottom: $b-space-xs
   margin-top: 0
+
   > b
     display: block
     opacity: 0.65
@@ -45,21 +47,26 @@ h4, .h4
 
 h1, .h1
   font-size: 165%
+  line-height: 1.4
+
   +respond-to($g-m)
     font-size: 200%
-  line-height: 1.4
+
   > b
     font-size: 45%
 
 h2, .h2
   font-size: 120%
+
   +respond-to($g-m)
     font-size: 150%
+
   > b
     font-size: 55%
 
 h3, .h3
   font-size: 125%
+
   > b
     font-size: 60%
 
@@ -71,6 +78,7 @@ a
   border-bottom: ($b-borderWidth * 2) $b-borderStyle $c-highlight
   color: $c-highlight
   text-decoration: none
+
   &:hover,
   &:focus
     border-bottom-color: $c-subdue

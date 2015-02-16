@@ -7,7 +7,8 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .card[.card--error|success|warning]
+// .card[error|success|warning]
+//   / ...
 //
 // *************************************
 
@@ -17,6 +18,7 @@
   border-radius: $b-borderRadius
   padding: $b-space-s
   position: relative
+
   +respond-to($g-s)
     padding: $b-space
 
@@ -24,7 +26,7 @@
 //   Modifiers
 // -------------------------------------
 
-// ----- Types ----- //
+// ----- Theme ----- //
 
 .card--error
   border-color: $c-error
@@ -34,4 +36,3 @@
 
 .card--warning
   border-color: $c-warning
-

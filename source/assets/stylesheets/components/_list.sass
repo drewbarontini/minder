@@ -7,10 +7,10 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// %ul.list[.list--bordered|bordered--condensed|object]
-//   %li.list-item(.is-active) Item
-//   %li.list-item(.is-active)
-//     %a.list-item-link{href: '#'} Item
+// %ul.list[bordered|bordered--condensed|object]
+//
+//   %li.list-item(active) Item
+//     %a.list-item-link
 //
 // *************************************
 
@@ -29,12 +29,14 @@
     border-bottom: $b-border
     margin: 0
     padding: (0.5 * $b-space) $b-space
+
     &:first-child
       border-top: $b-border
 
   .list-item-link
     border: 0
     display: block
+
     &:hover,
     &:focus
       color: lighten($c-highlight, 7%)
@@ -55,6 +57,7 @@
     display: inline
     margin-right: $b-space
     padding-right: $b-space-s
+
     &:last-child
       border-right: 0
       margin-right: 0
@@ -68,10 +71,12 @@
     float: left
     margin-bottom: $b-space-s
     margin-right: $b-space
-    +respond-to($g-m)
-      margin-right: 2 * $b-space
+
     &:last-child
       margin-right: 0
+
+    +respond-to($g-m)
+      margin-right: 2 * $b-space
 
   .list-item--label
     font-size: $b-fontSize-m
@@ -88,12 +93,14 @@
 
 .list-item
   display: block
+
   &:last-child
     margin-bottom: 0
 
 // Active
 
 .list-item.is-active
+
   > a
     border-color: $c-text
     color: $c-text
@@ -106,6 +113,7 @@
   .list-item-link
     color: $c-success
     font-weight: bold
+
     &::before
       margin-right: $b-space-s
 

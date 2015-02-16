@@ -1,5 +1,5 @@
-%header.header.row
-  .cell
+%header.header.row.row--a
+  .cell.well
     .g
       .g-b.g-b--m--2of5
 
@@ -12,27 +12,31 @@
 
       .g-b.g-b--m--3of5
 
-        %ul.statList.list
-          %li.statList-item.list-item
-            %h3.statList-item-title
+        %ul.list.list--object.statList
+
+          %li.list-item.statList-item
+            %h3.statList-item-title.h1
               %span.tci= get_total_pages()
               %b Total
+
           - if data.config.success_status
-            %li.statList-item.list-item
+            %li.list-item.statList-item
               = link_to "#{ slugify(data.config.success_status) }.html", class: 'statList-item-link' do
-                %h3.statList-item-title.statList-item-title--success
+                %h3.statList-item-title.statList-item-title--success.h1
                   %span= get_page_count('success')
                   %b= data.config.success_status
+
           - if data.config.warning_status
-            %li.statList-item.list-item
+            %li.list-item.statList-item
               = link_to "#{ slugify(data.config.warning_status) }.html", class: 'statList-item-link' do
-                %h3.statList-item-title.statList-item-title--warning
+                %h3.statList-item-title.statList-item-title--warning.h1
                   %span= get_page_count('warning')
                   %b= data.config.warning_status
+
           - if data.config.error_status
-            %li.statList-item.list-item
+            %li.list-item.statList-item
               = link_to "#{ slugify(data.config.error_status) }.html", class: 'statList-item-link' do
-                %h3.statList-item-title.statList-item-title--error
+                %h3.statList-item-title.statList-item-title--error.h1
                   %span= get_page_count('error')
                   %b= data.config.error_status
 

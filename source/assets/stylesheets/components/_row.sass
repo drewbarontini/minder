@@ -7,13 +7,14 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .row[.row--a]
+// .row[a]
 //
 // *************************************
 
 .row
   overflow: hidden
-  padding: 0 (0.5 * $b-space)
+  padding: 0 $b-space-s
+
   +respond-to($g-s)
     padding: 0 $b-space
 
@@ -21,8 +22,7 @@
 //   Modifiers
 // -------------------------------------
 
-// ----- Color Variants ----- //
+// ----- Hierarchy ----- //
 
 .row--a
   background: $row--a-background
-
